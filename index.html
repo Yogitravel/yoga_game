@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Yogi Travel</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+
+<body>
+
+    <div id="carouselExampleIndicators" class="carousel slide thuong-slider" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+
+
+                <form id="quiz" name="quiz">
+                    <h1>Find your Yoga style!</h1>
+                    <h1> Part 1 - Let do a test</h1>
+                    <div>
+                        <p class="question1">What is this Yoga pose name?</p>
+                        <img src="/img/p1bridge.jpg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question1" value="Bridge Pose"> Bridge Pose<br>
+                        <input type="radio" id="mc" name="question1" value="Downward Facing Dog Pose"> Downward Facing
+                        Dog
+                        Pose<br>
+                        <input type="radio" id="mc" name="question1" value="Bird Pose"> Bird Pose<br>
+                    </div>
+
+
+                    <div>
+                        <p class="question2">What is this Yoga pose name?</p>
+                        <img src="/img/p1child.jpeg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question2" value="Sleep Yoga Pose"> Sleep Yoga Pose<br>
+                        <input type="radio" id="mc" name="question2" value="Child Pose"> Child Pose<br>
+                        <input type="radio" id="mc" name="question2" value="Downwaed Facing Dog Pose"> Downwaed Facing
+                        Dog
+                        Pose<br>
+                    </div>
+
+
+
+                    <div>
+                        <p class="question3">What is this Yoga pose name?</p>
+                        <img src="/img/p1cobra.jpg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question3" value="Moon Yoga Pose"> Moon Yoga Pose<br>
+                        <input type="radio" id="mc" name="question3" value="Child Yoga Pose"> Child Yoga Pose<br>
+                        <input type="radio" id="mc" name="question3" value="Cobra Pose">Cobra Pose<br>
+                    </div>
+
+                    <div>
+                        <p class="question4">What is this Yoga pose name?</p>
+                        <img src="/img/p1dancer.jpg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question4" value="Sun Yoga Pose"> Sun Yoga Pose<br>
+                        <input type="radio" id="mc" name="question4" value="Dancer Pose"> Dancer Pose<br>
+                        <input type="radio" id="mc" name="question4" value="Tree Pose">Tree Pose<br>
+                    </div>
+
+                    <div>
+                        <p class="question5">What is this Yoga pose name?</p>
+                        <img src="/img/p1dowdog.jpg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question5" value="Hip Yoga Pose"> Hip Yoga Pose<br>
+                        <input type="radio" id="mc" name="question5" value="Back Cobra Yoga Pose"> Back Cobra Yoga
+                        Pose<br>
+                        <input type="radio" id="mc" name="question5" value="Doward Facing Dog Pose">Doward Facing Dog
+                        Pose<br>
+                    </div>
+
+                    <div>
+                        <p class="question6">What is this Yoga pose name?</p>
+                        <img src="/img/p1eagle.jpg" width="200px" /> <br>
+                        <input type="radio" id="mc" name="question6" value="Eagle Yoga Pose"> Eagle Yoga Pose<br>
+                        <input type="radio" id="mc" name="question6" value="Twist Yoga Pose"> Twist Yoga Pose<br>
+                        <input type="radio" id="mc" name="question6" value="Snake Pose">Snake Pose<br>
+
+                    </div>
+
+                    <input id="button" type="button" value="Check the result!" onclick="check();">
+
+                </form>
+
+            </div>
+
+
+
+            <div class="carousel-item">
+                <div id="quiz" name="quiz">
+                    <h1> Part 2 - Which describe you better?</h1>
+
+
+                    <h3> I am totally new to Yoga. I want simple movement but focus on my breathing and relaxing</h3>
+                    <br>
+                    <input id="hathayoga" type="button" value="Check the result!" onclick="styleyoga1();">
+
+                    <h3> I want a yoga class that makes me sweat. I want fast movements. I love music to go with my
+                        flow.</h3>
+                    <br>
+                    <input id="vinyasayoga" type="button" value="Check the result!" onclick="styleyoga2();">
+
+                    <h3> I need something simple, slow and easy for me to relax. I prefer easy poses</h3>
+                    <br>
+                    <input id="yinyoga" type="button" value="Check the result!" onclick="styleyoga3();">
+
+                    <h3> I did yoga before, I want to challenge myself with strong and fast movements</h3>
+                    <br>
+                    <input id="ashtangayoga" type="button" value="Check the result!" onclick="styleyoga4();">
+
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div id="quiz" name="quiz" style="display:block" ;>
+
+
+                    <h1> Part 3 - But, I am still worry!!</h1>
+                    <div class="answerpart3">
+                        <h3>Hey, what if I am not flexible? </h3>
+                        <input id="answerbutton1" type="button" value="Answer" onclick="answer1();">
+                        <br>
+                        <h3>I am too old for Yoga</h3>
+                        <input id="answerbutton2" type="button" value="Answer" onclick="answer2();">
+                        <br>
+                        <h3>I love to party and can not concentrate on meditation or balancing in the yoga class </h3>
+                        <input id="answerbutton3" type="button" value="Answer" onclick="answer3();">
+
+                    </div>
+
+                    <h2> Are you ready for the new yoga journey, click here to book your first Yoga session with us
+                    </h2>
+
+                    <button id="button" type="button" onclick="window.location.href = 'https://www.yogitravelvn.com';">
+                        Book a yoga session with us!</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <div class="fullanswer">
+
+        <div id="after_submit">
+            <p id="number_correct"></p>
+            <p id="message"></p>
+            <img id="picture">
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
